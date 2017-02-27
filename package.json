@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Starter-kit for JavaScript projects.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "Marco Roganovic <marcoroganovic@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.14.1",
+    "open": "0.0.5"
+  }
 }
