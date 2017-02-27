@@ -2,7 +2,7 @@ const express = require("express");
 const path    = require("path");
 const open    = require("open");
 
-const POST = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.get("/", (req, res) => {
@@ -13,6 +13,7 @@ app.listen(PORT, (err) => {
   if(err) {
     console.log(err);
   } else {
+    console.log("Server running on port: " + PORT);
     open("http://localhost:" + PORT);
   }
 });
