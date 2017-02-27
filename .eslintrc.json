@@ -5,8 +5,8 @@
     "plugin:import/errors",
     "plugin:import/warnings"
   ],
-  "parseOptions": {
-    "ecmaVersion": 2016,
+  "parserOptions": {
+    "ecmaVersion": 7,
     "sourceType": "module"
   },
   "env": {
