@@ -1,8 +1,7 @@
-const express = require("express");
-const path    = require("path");
-const open    = require("open");
-const chalk   = require("chalk");
-
+import express from "express";
+import path    from "path";
+import open    from "open";
+import chalk  from "chalk";
 
 const PORT = process.env.PORT || 3000;
 const app = express();
