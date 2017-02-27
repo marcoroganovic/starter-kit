@@ -7,8 +7,7 @@
     "prestart": "babel-node scripts/pre-start.js",
     "start": "npm-run-all --parallel security-check open:src",
     "open:src": "babel-node scripts/server.js",
-    "security-check": "nsp check",
-    "webpack": "webpack"
+    "security-check": "nsp check"
   },
   "author": "Marco Roganovic <marcoroganovic@gmail.com>",
   "license": "ISC",
