@@ -6,5 +6,8 @@
   * Mocha
   * Chai
   * JSDOM
-3. Development Server
+3. ESLint
+4. NSP (Node Security Project)
+5. Development Server
+  * Express
 
