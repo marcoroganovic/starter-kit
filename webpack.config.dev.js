@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const config = {
   devtool: "inline-source-map",
@@ -11,7 +12,12 @@ const config = {
     publicPath: "/",
     filename: "bundle.js"
   },
-  plugins: [],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      inject: true
+    })
+  ],
   module: {
     loaders: [
       { test: /\.js$/, exclude: /node_modules/, loaders: ["babel-loader"] },
