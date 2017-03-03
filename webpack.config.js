@@ -48,6 +48,7 @@ const config = {
   module: {
     loaders: [
       { test: /\.js$/, exclude: /node_modules/, loaders: ["babel-loader"] },
+      { test: /\.sass$/, loader: ExtractTextPlugin.extract(["css-loader", "sass-loader"]) },
       { test: /\.css$/, loader: ExtractTextPlugin.extract("css-loader") }
     ]
   }

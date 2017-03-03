@@ -21,6 +21,7 @@ const config = {
   module: {
     loaders: [
       { test: /\.js$/, exclude: /node_modules/, loaders: ["babel-loader"] },
+      { test: /\.css$/, laoders: ["style-loader", "css-loader"] },
       { test: /\.sass$/, loaders: ["style-loader", "css-loader", "sass-loader"] }
     ]
   }
