@@ -3,6 +3,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const LiveReloadPlugin = require("webpack-livereload-plugin");
 
 
 const htmlConfig = {
@@ -25,6 +26,7 @@ const htmlConfig = {
 
 const config = {
   devtool: "source-map",
+  watch: true,
   entry: {
     vendor: path.resolve(__dirname, "src/vendor"),
     main: path.resolve(__dirname, "src/index")
