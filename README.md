@@ -10,4 +10,5 @@
 4. NSP (Node Security Project)
 5. Development Server
   * Express
-
+6. Continuous Integration
+7. Production Build
