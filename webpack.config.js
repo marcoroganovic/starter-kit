@@ -3,7 +3,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const LiveReloadPlugin = require("webpack-livereload-plugin");
 
 
 const htmlConfig = {
